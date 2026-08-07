@@ -1250,6 +1250,11 @@ MOBILE RESPONSIVENESS ↓
     padding: 80px 32px;
   }
 
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .nav__links {
     display: none;
   }
@@ -1258,7 +1263,6 @@ MOBILE RESPONSIVENESS ↓
     display: block;
   }
 
-  @media (max-width: 1024px) {
   .plans {
     flex-direction: column;
     align-items: center;
@@ -1268,10 +1272,11 @@ MOBILE RESPONSIVENESS ↓
     margin-right: 0;
     margin-bottom: 32px;
   }
-}
+
 }
 
 @media (max-width: 768px) {
+
   #quality .row,
   #values .row {
     flex-direction: column-reverse;
@@ -1295,6 +1300,68 @@ MOBILE RESPONSIVENESS ↓
   .testimonials__description {
   width: 100%;
   }
+
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+  }
+
+  .header__description {
+    text-align: center;
+  }
+
+  .header__customer {
+    padding-right: 0;
+  }
+
+  .header__email {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .feature {
+    width: 50%;
+  }
+  
+  .start__row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .start__title,
+  .start__buttons {
+    width: 100%;
+  }
+
+  .start__buttons {
+    justify-content: center;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .start__button:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer__columns {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__column {
+    align-items: center;
+    width: 50%;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1307,5 +1374,35 @@ MOBILE RESPONSIVENESS ↓
   }
   main {
     margin-bottom: 80px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .feature__row {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature__text {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .start__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start__button {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .footer__column {
+    width: 100%;
   }
 }
